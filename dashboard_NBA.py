@@ -43,7 +43,7 @@ selected_player = st.sidebar.selectbox('Choose your favorite player \U0001F609.'
 
 selected_stat = st.sidebar.selectbox(
             'Choose the player stat you wanna analyze deeply',
-            df.drop(['Tm','MP','Res','Opp','Player'],axis=1).columns,
+            df.drop(['Tm','Res','Opp','Player','Data'],axis=1).columns,
             key=1)
 
 selected_team = st.sidebar.selectbox('Choose your favorite team \U0001F609.',get_teams())
